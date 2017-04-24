@@ -3,7 +3,7 @@
  *
  * Find the Factorial of an Integer
  *
- * Have the function FirstFactorial(num) take the num parameter being passed and return the
+ * Have the function factorial(num) take the num parameter being passed and return the
  * factorial of it (e.g. if num = 4, return (4 * 3 * 2 * 1)). For the test cases, the range will be
  * between 1 and 16 and the input will always be an integer.
  *
@@ -60,10 +60,10 @@
  *    a) 3 points will go toward efficiency regarding how your code is written. (Less is more.)
  *    b) 3 points will go toward efficiency regarding how un-busy your processor is throughout the
  *       runtime of your program. (Less is more.)
- * 4. (10 pts) Correct solution. Your solution must correctly parse and find the longest word in
- *    any arbitrary string, including but not limited to the test cases above. Pay attention to
- *    any assumptions outlined in the exercise and/or in the code itself. If you assume something
- *    not listed, document it. Be prepared to injest this entire exercise as well :)
+ * 4. (10 pts) Correct solution. Your solution must correctly compute the factorial of any integer
+ *    between 0 and 16, inclusive, including but not limited to the test cases above. Pay attention
+ *    to any assumptions outlined in the exercise and/or in the code itself. If you assume
+ *    something not listed, document it.
  * 5. (1 pt) Have fun! Please let me know if you have any questions.
  * 6. (5 pts extra credit) Provide another (correct) method within the FirstFactorial class,
  *    factorialAlternate, which computes the factorial of an integer, but make the
