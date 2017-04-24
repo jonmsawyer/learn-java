@@ -6,7 +6,7 @@
  * Your assignment: get this to compile and run on your computer. A windows batch file is included
  * for you in this exercise. It should be enough to run it via:
  *
- * C:\learning-java\00-hello-world> run.bat
+ * C:\learn-java\00-hello-world> run.bat
  *
  * And it should output:
  *
