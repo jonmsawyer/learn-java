@@ -19,13 +19,26 @@
  *          int myCodeHere = 0x20;
  */
 
-import java.util.*; // Unglob this
+import java.util.Scanner;
 
 class FirstReverse {
     
+    /**
+     * Return the input string in its reversed order.
+     *
+     * @param  str  the input string to reverse
+     * @return      the input string reversed
+     */
     public static String firstReverse(String str) {
-        // code goes here
-        return str;
+        // Create a new string
+        String rev = "";
+        
+        // Iterate over the input string (in reverse) according to its length
+        for (int i = str.length() - 1; i >= 0; i--) {
+            // Build up the reversed string character-by-character
+            rev += str.substring(i, i + 1);
+        }
+        return rev;
     }
     
     public static void main (String[] args) {
