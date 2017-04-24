@@ -20,7 +20,6 @@
  */
 
 import java.util.*; // Unglob this
-import java.io.*; // Unglob this
 
 class FirstReverse {
     
@@ -29,13 +28,13 @@ class FirstReverse {
         return str;
     }
     
-    /* No need to modify this method */
     public static void main (String[] args) {
+        // Do not modify this method.
         Scanner s = new Scanner(System.in);
         System.out.print("Input a sentence, and I'll output that sentence in reverse: ");
         System.out.print(firstReverse(s.nextLine()));
     }
-    
+
 }
 
 /**
