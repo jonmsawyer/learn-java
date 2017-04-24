@@ -5,7 +5,7 @@
  *
  * Have the function FirstFactorial(num) take the num parameter being passed and return the
  * factorial of it (e.g. if num = 4, return (4 * 3 * 2 * 1)). For the test cases, the range will be
- * between 1 and 18 and the input will always be an integer.
+ * between 1 and 16 and the input will always be an integer.
  *
  * Sample test cases
  * -----------------
@@ -73,7 +73,7 @@
  * Total number of possible points: 36 + 5
  *************************************************************************************************/
 
-import java.util.*;
+import java.util.Scanner;
  
 public class FirstFactorial {
 
@@ -86,18 +86,25 @@ public class FirstFactorial {
      */
     private static int factorial(int num) {
         // Code goes here
-        return -1;
+        if (num < 0) {
+            return -1;
+        }
+        else if (num == 0) {
+            return 1;
+        }
+        else {
+            return num * factorial(num - 1);
+        }
     }
     
     public static void main(String[] args) {
         // Do not modify this method
         Scanner s = new Scanner(System.in);
-        System.out.println("Input an integer, and we'll compute its factorial:");
+        System.out.print("Input an integer, and we'll compute its factorial: ");
         String input = s.nextLine();
-        System.out.println("You entered \""+input+"\", now we'll try to calculate its factorial...");
-        System.out.print("The calculation will be: ");
-        int result = factorial(Integer.parseInt(input));
-        System.out.println("= " + Integer.toString(result));
+        System.out.println(
+            "The factorial of \""+input+"\" is: " + factorial(Integer.parseInt(input))
+        );
         s.close();
     }
 
