@@ -86,19 +86,23 @@ public class FirstFactorial {
      */
     private static int factorial(int num) {
         // Code goes here
-        return -1;
+  if((num <=55) && (num >=5)){
+        System.out.println(num + " = . The number is less than 55 but greater than 5");
+    }else if(num == 0) {
+            return -1;
+        }
+        return num;
     }
-    
+
     public static void main(String[] args) {
         // Do not modify this method
         Scanner s = new Scanner(System.in);
         System.out.print("Input an integer, and we'll compute its factorial: ");
         String input = s.nextLine();
         System.out.println(
-            "The factorial of \""+input+"\" is: " + factorial(Integer.parseInt(input))
+                "The factorial of \""+input+"\" is: " + factorial(Integer.parseInt(input))
         );
         s.close();
     }
 
 }
-
