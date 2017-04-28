@@ -1,3 +1,27 @@
+//Here I have added my solution to the top. 
+
+class Main {
+
+   /* public static String FirstReverse(String str) {
+        if ((str == null) || (str.length() <= 1)) {
+            return str;
+        }
+        return FirstReverse((str.substring(1)) + (str.charAt(0)));//added () around each statement
+    }
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Input a sentence, and I'll output that sentence in reverse: ");
+        System.out.print(FirstReverse(s.nextLine()));*/
+        System.out.println(FirstReverse(null));
+    }
+
+}
+
+
+
+
+
+
 /**************************************************************************************************
  * File: FirstReverse.java
  *
